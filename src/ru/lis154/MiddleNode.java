@@ -8,8 +8,8 @@ public class MiddleNode {
         ListNode listNode5 = new ListNode(0, new ListNode(7, new ListNode(2, new ListNode(6, new ListNode(6
                 , new ListNode(8, new ListNode(0, new ListNode(3, new ListNode(
                 4, new ListNode(5))))))))));
-        System.out.println(middleNode(listNode5));
-        System.out.println(middleNode(listNode4));
+        System.out.println(middleNode2(listNode5));
+        System.out.println(middleNode2(listNode4));
     }
 
     public static ListNode middleNode(ListNode head) {
@@ -28,4 +28,17 @@ public class MiddleNode {
         }
         return head;
     }
+    public static ListNode middleNode2(ListNode head) {
+        int i = 0;
+        ListNode rez = head;
+        while (head != null){
+            head = head.next;
+            i++;
+            if (head != null && i%2 != 0){
+                rez = rez.next;
+            }
+        }
+        return rez;
+    }
+
  }
