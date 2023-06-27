@@ -2,6 +2,7 @@ package ru.lis154;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 public class Permutations {
 
@@ -26,4 +27,8 @@ public class Permutations {
             }
         }
     }
+
+    TreeSet<Integer> set = new TreeSet<>();
+
+
 }

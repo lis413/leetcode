@@ -1,5 +1,7 @@
 package ru.lis154;
 
+import java.util.TreeSet;
+
 public class FindFirstAndLastPositionOfElementInSortedArray {
 
     public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
                 } else min = false;
             } else min = false;
         }
+
 
         boolean max = true;
         while (max){
@@ -44,6 +47,8 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
                 right = middle - 1;
             }
         }
+        TreeSet<Integer> set;
         return -1;
     }
+
 }

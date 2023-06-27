@@ -16,7 +16,7 @@ public class LowestCommonAncestor {
         if (root.val < p.val && root.val < q.val){
             return lowestCommonAncestor(root.right, p, q);
         }
-//        List<TreeNode> queue1 = getQueue(root, p);
+//        List<TreeNode> queue1 = getQueue(root, p);1
 //        List<TreeNode> queue2 = getQueue(root, q);
 //        for (int i = queue1.size()-1; i >= 0; i--){
 //            for (int j = queue1.size()-1; j >= 0; j--){
